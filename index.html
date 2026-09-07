@@ -6,178 +6,154 @@
 <title>홍윤아 · 자기소개서</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.gh/gh/orioncactus/pretendard/dist/web/static/pretendard.min.css" rel="stylesheet">
 <style>
-  :root{
-    --paper: #FBF8F3;
-    --ink: #2E2A26;
-    --ink-soft: #6B6259;
-    --line: #E8DFD2;
-    --accent: #B8763E;
-    --accent-deep: #8C5A2E;
-    --accent-soft: #F1E4D3;
-    --stat-bg: #FFFFFF;
+  :root {
+    --paper: #FFFFFF;
+    --ink: #191F28;
+    --ink-soft: #4E5968;
+    --line: #E5E8EB;
+    --accent: #3182CE;
+    --accent-deep: #1B64DA;
+    --accent-soft: #F2F4F8;
+    --stat-bg: #F8F9FA;
   }
 
-  *{ box-sizing: border-box; }
+  * { box-sizing: border-box; }
 
-  html{ scroll-behavior: smooth; }
+  html { scroll-behavior: smooth; }
 
-  body{
-    margin:0;
+  body {
+    margin: 0;
     background: var(--paper);
     color: var(--ink);
-    font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 300;
-    line-height: 1.9;
+    font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: -0.015em;
     -webkit-font-smoothing: antialiased;
   }
 
-  .page{
+  .page {
     max-width: 760px;
     margin: 0 auto;
-    padding: 96px 32px 140px;
+    padding: 80px 32px 120px;
   }
 
-  @media (max-width: 600px){
-    .page{ padding: 56px 20px 100px; }
+  @media (max-width: 600px) {
+    .page { padding: 48px 20px 80px; }
   }
 
   /* ---------- Header ---------- */
 
-  header{
-    margin-bottom: 88px;
+  header {
+    margin-bottom: 72px;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 48px;
   }
 
-  .role-tag{
+  .role-tag {
     display: inline-block;
-    font-size: 14px;
+    font-size: 13px;
     color: var(--accent-deep);
     background: var(--accent-soft);
-    letter-spacing: 0.01em;
-    margin: 0 0 22px;
-    padding: 7px 16px;
-    border-radius: 100px;
-    font-weight: 500;
-  }
-
-  h1{
-    font-family: 'Noto Serif KR', serif;
-    font-weight: 700;
-    font-size: clamp(34px, 6vw, 48px);
-    line-height: 1.35;
-    margin: 0 0 28px;
     letter-spacing: -0.01em;
+    margin: 0 0 16px;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-weight: 600;
   }
 
-  .lede{
-    font-size: 17px;
+  h1 {
+    font-weight: 700;
+    font-size: clamp(28px, 5vw, 40px);
+    line-height: 1.4;
+    margin: 0 0 20px;
+    letter-spacing: -0.02em;
+  }
+
+  .lede {
+    font-size: 16px;
     color: var(--ink-soft);
     max-width: 58ch;
-    margin: 0 0 40px;
+    margin: 0 0 36px;
   }
 
-  .stat-row{
+  .stat-row {
     display: flex;
-    gap: 14px;
+    gap: 12px;
     flex-wrap: wrap;
   }
 
-  .stat{
+  .stat {
     background: var(--stat-bg);
     color: var(--ink);
     border: 1px solid var(--line);
-    border-radius: 18px;
-    padding: 18px 24px;
+    border-radius: 12px;
+    padding: 16px 20px;
     min-width: 150px;
   }
 
-  .stat .num{
-    font-family: 'Noto Serif KR', serif;
-    font-size: 24px;
-    font-weight: 600;
+  .stat .num {
+    font-size: 22px;
+    font-weight: 700;
     display: block;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
     color: var(--accent-deep);
+    letter-spacing: -0.02em;
   }
 
-  .stat .label{
+  .stat .label {
     font-size: 13px;
     color: var(--ink-soft);
   }
 
   /* ---------- Sections ---------- */
 
-  section{
-    padding-top: 64px;
-    margin-top: 8px;
+  section {
+    padding-top: 56px;
+    margin-top: 56px;
+    border-top: 1px solid var(--line);
     position: relative;
   }
 
-  section:first-of-type{
+  section:first-of-type {
     margin-top: 0;
     padding-top: 0;
+    border-top: none;
   }
 
-  section:not(:first-of-type)::before{
-    content: "";
-    position: absolute;
-    top: 24px;
-    left: 0;
-    width: 44px;
-    height: 3px;
-    border-radius: 2px;
-    background: var(--accent-soft);
-  }
-
-  h2{
-    font-family: 'Noto Serif KR', serif;
-    font-weight: 600;
-    font-size: 24px;
-    margin: 0 0 30px;
+  h2 {
+    font-weight: 700;
+    font-size: 22px;
+    margin: 0 0 24px;
     display: flex;
-    align-items: baseline;
-    gap: 14px;
+    align-items: center;
+    gap: 10px;
     color: var(--ink);
   }
 
-  h2 .mark{
-    display:inline-block;
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    background: var(--accent);
+  h2 .mark {
+    display: inline-block;
+    width: 6px;
+    height: 20px;
+    border-radius: 3px;
+    background: var(--accent-deep);
     flex-shrink: 0;
-    transform: translateY(-3px);
   }
 
-  p{
-    font-size: 16.5px;
-    margin: 0 0 22px;
+  p {
+    font-size: 15.5px;
+    margin: 0 0 20px;
     max-width: 62ch;
-  }
-
-  p:last-child{ margin-bottom: 0; }
-
-  .pull{
-    background: var(--accent-soft);
-    border-radius: 16px;
-    margin: 34px 0;
-    padding: 20px 26px;
-    font-family: 'Noto Serif KR', serif;
-    font-size: 17px;
     color: var(--ink);
-    font-style: normal;
-    max-width: 56ch;
   }
 
-  .pull span{
-    color: var(--accent-deep);
-    font-weight: 500;
-  }
+  p:last-child { margin-bottom: 0; }
 
-  ::selection{
+  ::selection {
     background: var(--accent-soft);
+    color: var(--accent-deep);
   }
 </style>
 </head>
@@ -211,18 +187,17 @@
   <section>
     <h2><span class="mark"></span>자기소개서</h2>
     <p>
-      IT사업의 실행 과정에서 발생하는 다양한 업무를 직접 경험하며 사업을 숫자와 프로세스의 관점에서
-      관리하는 역량을 쌓아왔습니다. IT사업관리 업무에서는 연 28억 규모의 통합 유지보수 사업을 담당하며
-      약 60개 제조사 및 총판의 견적과 계약을 관리하고, 매입 원가를 산정하여 사업의 수익성을 검토했습니다.
+      IT사업 과정에서 발생하는 다양한 업무를 직접 경험하며 사업을 숫자와 프로세스의 관점에서
+      관리하는 역량을 쌓았습니다. IT사업관리 업무에서는 연 28억 규모의 통합 유지보수 사업을 담당하며
+      약 60개 제조사 및 총판사의 견적과 계약을 관리하고, 매입 원가를 산정하여 사업의 수익성을 검토했습니다.
       또한 협력업체와 고객사의 요청사항 및 프로젝트 진행 현황을 조율하며 사업이 계획대로 진행될 수
       있도록 관리했습니다.
     </p>
     <p>
       현재는 영업관리 업무를 수행하며 매출·매입, 계약, 비용 및 실적을 관리하고 있습니다. 업무 과정에서
-      장기 미수채권 1억 6천만 원을 발견한 후 계약 및 거래 이력을 추적하고 관련 부서와 협업하여 전액
-      회수했으며, 이후 동일한 문제가 반복되지 않도록 거래처 신용정보를 사전에 확인하는 관리 기준을
-      마련했습니다. 이처럼 주어진 업무를 처리하는 데 그치지 않고 문제의 원인을 파악하고 업무 방식과
-      기준을 개선해 온 것이 저의 강점입니다.
+      장기 미수채권 1억 6천만 원을 발견한 후 계약 및 거래 이력을 추적하여 전액 회수했으며,
+      이후 동일한 문제가 반복되지 않도록 거래처 신용정보를 사전에 확인하는 관리 기준을 마련했습니다.
+      이처럼 주어진 업무를 처리하는 데 그치지 않고 문제의 원인을 파악하고 업무 방식과 기준을 개선해 온 것이 저의 강점입니다.
     </p>
     <p>
       앞으로는 이러한 IT사업의 실행 경험을 기반으로 사업의 방향과 자원 배분을 고민하는 IT기획 영역으로
@@ -239,9 +214,6 @@
       사용하지 않고 실적과 진행 현황을 관리하는 데 필요한 항목을 재검토하여 파일 구조와 관리 기준을
       개선했습니다. 이를 통해 업무 현황을 한눈에 파악할 수 있도록 했으며, 영업 총괄로부터 강점을
       인정받는 평가를 받았습니다.
-    </p>
-    <p class="pull">
-      “무엇이 필요한지 <span>아는 것 같다</span>”는 평가를 받았습니다.
     </p>
     <p>
       이러한 성향은 IT기획 업무에서도 강점이 될 수 있다고 생각합니다. 다양한 부서의 요구사항과 데이터를
@@ -276,7 +248,6 @@
       발견하고 다양한 부서와 협업하여 실행 가능한 방향을 제시할 수 있는 IT기획 담당자로 성장하겠습니다.
     </p>
   </section>
-
 
 </div>
 
